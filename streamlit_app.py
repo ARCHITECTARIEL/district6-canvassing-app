@@ -458,7 +458,7 @@ if st.session_state.current_tab == "Home":
             st.session_state.selected_precinct = precinct_id
             st.session_state.addresses = load_precinct_addresses(precinct_id)
             st.session_state.visited_addresses = set()
-            st.experimental_rerun()
+           st.rerun()
         
         # Display map
         if st.session_state.addresses:
